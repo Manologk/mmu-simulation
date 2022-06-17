@@ -49,8 +49,14 @@ h3 {
 
 #rightContainer {
   float: right;
-  width: 50%;
+  width: 25%;
 }
+
+#rightVContainer {
+  float: right;
+  width: 25%;
+}
+
 
 #memoryContainer {
   float: left;
@@ -60,11 +66,26 @@ h3 {
   width: 150px;
 }
 
+#v_memoryContainer{
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80vh;
+  width: 10px;
+}
+
 #memory {
   float: right;
   width: 150px;
   height: 100%;
 }
+
+#vmemory{
+  float: right;
+  width: 10px;
+  height: 100%;
+}
+
 
 #block {
   box-sizing: border-box;

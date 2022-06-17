@@ -1,0 +1,29 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #3d4442;
+    color: #f3f0f0;
+    padding: 0;
+    margin: 0;
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  #rightVContainer {
+    /* float: right; */
+    width: 50%;
+  }
+
+  #v_memoryContainer{
+    /* float: left; */
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+    width: 100px;
+  }
+  
+
+  #vmemory{
+    float: right;
+    width: 10px;
+    height: 100%;
+  }

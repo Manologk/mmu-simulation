@@ -1,7 +1,6 @@
 const STATE_IDLE = "idle";
 const STATE_RUNNING = "running";
 const STATE_PENDING = "pending";
-const STATE_DENINED = "go fuck your self, get a life";
 function Process(size, time, state) {
 	this.size = size;
 	this.timeLeft = time;
@@ -305,36 +304,3 @@ var clock = setInterval(function () {
 	refreshTable();
 	heap.repaint();
 }, 1000);
-
-/*processSizes = [150, 383, 400, 800, 2000, 10, 50, 20, 300, 830];
-var processIndex = 0;
-var allocateProcesss = setInterval(function() {
-	process = new Process(processSizes[processIndex]);
-	//log("Requesting allocation for process: " + process.size);
-
-	if (heap.requestAllocation(process)) {
-		//log("Process successfully allocated.");
-		//log("New heap: " + heap.toString() + "<br />");
-		heap.repaint();
-	} else {
-		//log("Process failed to be allocated." + "<br />");
-	};
-
-	processIndex += 1;
-	if (processIndex == (processSizes.length-1)) {
-		clearInterval(allocateProcesss);
-	}
-}, 1000);*/
-
-/*for (i=0; i<processSizes.length; i++) {
-	process = new Process(processSizes[i]);
-	log("Requesting allocation for process: " + process.size);
-
-	if (heap.requestAllocation(process)) {
-		log("Process successfully allocated.");
-		log("New list: " + heap.toString() + "<br />");
-		heap.repaint();
-	} else {
-		log("Process failed to be allocated." + "<br />");
-	};
-};*/
